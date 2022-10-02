@@ -1,0 +1,26 @@
+$bodyColor: #212121 ;
+
+$mainColor: #262626 ;
+
+$hoverColor: #ff8c05 ;
+
+%sections {
+    width: 70%;
+    margin-top: 5rem ;
+    padding: 2rem 1.7rem;
+    background-color: $mainColor;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+
+%BTN {
+    background: linear-gradient(135deg, #ff8c05 0%, #d61a5e 100%);
+    border-radius: 4px;
+    padding: 0.7rem  0;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease;
+    &:hover {
+        transform: scale(1.07);
+    }
+}
