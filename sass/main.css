@@ -1,10 +1,17 @@
-#Footer, #contact, #resume, #About, #Home {
+#Footer, #contact, #portfolio, #resume, #About, #Home {
   width: 70%;
   margin-top: 5rem;
   padding: 2rem 1.7rem;
   background-color: #262626;
   overflow: hidden;
   border-radius: 0.3rem;
+}
+
+#portfolio .title, #resume .title {
+  color: #ff8c05;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 #contact .form form .BTN, #Home .HomeContent .BTN {
@@ -151,12 +158,6 @@ header .navbar .navbar-toggler {
   background-size: cover;
 }
 
-#resume .title {
-  color: #ff8c05;
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 2.5rem;
-}
 #resume .contentslide1 {
   padding: 1.5rem 0;
   margin: 6rem 0;
@@ -214,6 +215,38 @@ header .navbar .navbar-toggler {
 }
 #resume .skills-bars .skill .progress .progress-bar {
   background-color: #ff8c05;
+}
+
+#portfolio .MyWork {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+#portfolio .MyWork .works {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#portfolio .MyWork .works .resturant, #portfolio .MyWork .works .Fitness {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #212121;
+  transition: all 0.3s linear;
+}
+#portfolio .MyWork .works .resturant :hover, #portfolio .MyWork .works .Fitness :hover {
+  transform: scale(1.06);
+}
+#portfolio .MyWork .works .resturant a img, #portfolio .MyWork .works .Fitness a img {
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+#portfolio .MyWork .works .workName {
+  color: #ff8c05;
+  margin: 1rem 0;
 }
 
 #contact .Text {
@@ -286,7 +319,7 @@ header .navbar .navbar-toggler {
     width: 95%;
     left: 2.5%;
   }
-  #About, #Home, #resume, #contact, #Footer {
+  #About, #Home, #resume, #contact, #Footer, #portfolio {
     width: 95%;
     text-align: center;
   }
@@ -330,6 +363,18 @@ header .navbar .navbar-toggler {
   }
   .skill {
     width: 95% !important;
+  }
+  /*portfolio*/
+  #portfolio .MyWork {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  #portfolio .MyWork .works {
+    width: 95%;
+  }
+  #portfolio .MyWork .works .resturant, #portfolio .MyWork .works .Fitness {
+    padding: 0.5rem;
   }
   /*Contact*/
   #contact {

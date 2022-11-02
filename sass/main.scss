@@ -164,10 +164,7 @@ header {
 #resume {
     @extend %sections;
     .title{
-        color: #ff8c05;
-        text-transform: capitalize;
-        text-align: center;
-        font-size: 2.5rem;
+        @extend %title;
     }
     .contentslide1 {
         padding: 1.5rem 0;
@@ -237,6 +234,47 @@ header {
             }
             }
         }
+    }
+}
+
+#portfolio {
+        @extend %sections;
+        .title{
+            @extend %title;
+        }
+        .MyWork {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-evenly;
+            padding: 1.5rem;
+            .works{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .resturant,.Fitness {
+                    width: 100%;
+                    border-radius: 1rem;
+                    padding: 1rem 1.5rem;
+                    background-color: $bodyColor;
+                    transition: all 0.3s linear;
+                    :hover{
+                        transform: scale(1.06);
+                    }
+                    a{
+                        img{
+                            border-radius: 10px;
+                            width: 100%;
+                            transition: all 0.3s linear;
+                        }
+                    }
+                }
+                .workName {
+                    color: $hoverColor;
+                    margin: 1rem 0;
+                    
+                }
+            }
     }
 }
 
@@ -324,7 +362,7 @@ header {
         left: 2.5%;
     }
 
-    #About, #Home, #resume,#contact,#Footer {
+    #About, #Home, #resume,#contact,#Footer,#portfolio {
         width: 95%;
         text-align: center;
     }
@@ -383,6 +421,21 @@ header {
 
     .skill  {
         width: 95% !important;
+    }
+
+    /*portfolio*/
+    #portfolio {
+        .MyWork {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            .works {
+                width: 95%;
+                .resturant,.Fitness {
+                    padding: 0.5rem;
+                }
+            }
+        }
     }
 
     /*Contact*/
