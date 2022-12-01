@@ -248,7 +248,8 @@ header {
             justify-content: space-evenly;
             padding: 1.5rem;
             .works{
-                width: 40%;
+                max-width: 40%;
+                min-width: 33%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -430,7 +431,7 @@ header {
             align-items: center;
             padding: 1rem;
             .works {
-                width: 95%;
+                min-width: 95%;
                 .resturant,.Fitness {
                     padding: 0.5rem;
                 }
