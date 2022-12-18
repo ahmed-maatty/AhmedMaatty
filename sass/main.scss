@@ -196,9 +196,17 @@ header {
             list-style: none;
             color: #ff8c05;
             width: 30%;
+            .IcanMake {
+                color: #ff8c05;
+                font-weight: 300;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
             li {
                 margin: 1rem 0;
                 position: relative;
+                letter-spacing: 1px;
                 &::before{
                     content: '' ;
                     width: 4px;
@@ -211,8 +219,8 @@ header {
                 a {
                     transition: all 0.5s ease;
                     font: {
-                        size: 1.4rem;
-                        weight:600;
+                        size: 1.1rem;
+                        weight:300;
                     }
                     padding: 0.6rem;
                     &:hover {
@@ -246,6 +254,7 @@ header {
             display: flex;
             gap: 1rem;
             justify-content: space-evenly;
+            flex-wrap: wrap;
             padding: 1.5rem;
             .works{
                 max-width: 40%;
